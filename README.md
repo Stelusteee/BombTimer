@@ -7,3 +7,5 @@
 <h3>How to use?</h3>
 <p>Insert time and press ENTER key to start. Right click to bring up the context menu.</p>
 <img width="350" alt="screenshot 2" src="https://github.com/user-attachments/assets/d75226ca-1077-4dae-a606-195bf0e0a669">
+<br><br><br><br><br><br><br><br><br><br>
+Please don't check the code it's embarrassing ToT
