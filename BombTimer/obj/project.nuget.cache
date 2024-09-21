@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TK/Jv2MX9O8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\BombTimer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stelu\\.nuget\\packages\\csfml\\2.6.1\\csfml.2.6.1.nupkg.sha512",
+    "C:\\Users\\stelu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\stelu\\.nuget\\packages\\sfml.audio\\2.6.0\\sfml.audio.2.6.0.nupkg.sha512",
+    "C:\\Users\\stelu\\.nuget\\packages\\sfml.system\\2.6.0\\sfml.system.2.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
