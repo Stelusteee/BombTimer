@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\stelu\\source\\repos\\BombTimer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\wnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\wnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,38 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
-              "RelativeDocumentMoniker": "BombTimer\\Program.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
-              "RelativeToolTip": "BombTimer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:22:55.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Wnd.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
-              "RelativeDocumentMoniker": "BombTimer\\Wnd.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
-              "RelativeToolTip": "BombTimer\\Wnd.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAAAH0AAACKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T15:22:14.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Wnd.Designer.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.Designer.cs",
               "RelativeDocumentMoniker": "BombTimer\\Wnd.Designer.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.Designer.cs",
               "RelativeToolTip": "BombTimer\\Wnd.Designer.cs",
-              "ViewState": "AQIAADsBAAAAAAAAAAAAAAEAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T15:22:17.567Z",
               "EditorCaption": ""

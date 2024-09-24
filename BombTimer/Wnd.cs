@@ -115,9 +115,6 @@ namespace BombTimer
             }
         }
 
-        // ****************** //
-        // REWRITE THIS LATER //
-        // ****************** //
         private void Wnd_Resize(object sender, EventArgs e)
         {
             float dpiScale = 96f / DeviceDpi;

@@ -1,6 +1,7 @@
 ﻿using SFML.Audio;
 using System.ComponentModel;
 using System.Drawing.Text;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace BombTimer
@@ -16,6 +17,25 @@ namespace BombTimer
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        private const int HWND_TOPMOST = -1;
+        private const int SWP_NOSIZE = 0x0001;
+        private const int SWP_NOMOVE = 0x0002;
+
+        [DllImport("user32.dll")]
+        private static extern bool SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int y, int cx, int cy, uint uFlags);
+
+        protected override void WndProc(ref Message wm)
+        {
+            const int WM_ACTIVATE = 0x0006;
+
+            if (wm.Msg == WM_ACTIVATE)
+            {
+                SetWindowPos(Handle, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
+            }
+
+            base.WndProc(ref wm);
         }
 
         #region TIMER
@@ -346,9 +366,7 @@ namespace BombTimer
             Icon = (Icon)rsrc.GetObject("$this.Icon");
             KeyPreview = true;
             Name = "Wnd";
-            ShowInTaskbar = false;
             Text = "C4";
-            TopMost = true;
             TransparencyKey = Color.Gray;
             Load += Wnd_Load;
             KeyDown += Wnd_KeyDown;
