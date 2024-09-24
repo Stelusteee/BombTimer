@@ -1,5 +1,6 @@
 ﻿using SFML.Audio;
 using System.ComponentModel;
+using System.Drawing.Text;
 using System.Text;
 
 namespace BombTimer
@@ -46,6 +47,11 @@ namespace BombTimer
 
                     timeStr = $"{inputStr.ToString(0, 2):D2}:{inputStr.ToString(2, 2):D2}:{inputStr.ToString(4, 2):D2}";
                 }
+            }
+
+            if (e.KeyCode == Keys.Back && !timerStarted)
+            {
+                ResetTimer();
             }
 
             InputText.Text = timeStr;
@@ -135,6 +141,8 @@ namespace BombTimer
                 ExpWnd.Close();
                 animTimer = null;
                 ExpWnd = null;
+                Show();
+                notifyIcon.Visible = false;
                 return;
             }
 
@@ -164,6 +172,7 @@ namespace BombTimer
         #region Windows Form Designer generated code
 
         ComponentResourceManager rsrc;
+        PrivateFontCollection fontCollection = new();
         private void InitializeComponent()
         {
             components = new Container();
@@ -182,6 +191,7 @@ namespace BombTimer
             DefuseOption = new ToolStripMenuItem();
             HideOption = new ToolStripMenuItem();
             QuitOption = new ToolStripMenuItem();
+            HelpOption = new ToolStripMenuItem();
             InputText = new Label();
             ((ISupportInitialize)c4img).BeginInit();
             ctxMenuStrip.SuspendLayout();
@@ -206,7 +216,7 @@ namespace BombTimer
             // ctxMenuStrip
             // 
             ctxMenuStrip.ImageScalingSize = new Size(24, 24);
-            ctxMenuStrip.Items.AddRange(new ToolStripItem[] { ScaleOption, soundSelectOpt, DefuseOption, HideOption, QuitOption });
+            ctxMenuStrip.Items.AddRange(new ToolStripItem[] { ScaleOption, soundSelectOpt, DefuseOption, HideOption, HelpOption, QuitOption });
             ctxMenuStrip.Name = "ctxMenuStrip";
             ctxMenuStrip.Size = new Size(241, 197);
             // 
@@ -304,12 +314,18 @@ namespace BombTimer
             QuitOption.Text = "Quit";
             QuitOption.Click += QuitOption_Click;
             // 
+            // HelpOption
+            // 
+            HelpOption.Name = "HelpOption";
+            HelpOption.Size = new Size(240, 32);
+            HelpOption.Text = "Help";
+            HelpOption.Click += HelpOption_Click;
+            // 
             // InputText
             // 
             InputText.AutoSize = true;
             InputText.BackColor = Color.Transparent;
-            InputText.Font = new Font("ProggyCleanTT", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            InputText.Location = new Point(140, 95);
+            fontCollection.AddFontFile("ProggyClean.ttf");
             InputText.Name = "InputText";
             InputText.Size = new Size(97, 20);
             InputText.TabIndex = 1;
@@ -360,5 +376,6 @@ namespace BombTimer
         private ToolStripMenuItem comgoOpt;
         private ToolStripMenuItem letsGoOpt;
         private ToolStripMenuItem locknloadOpt;
+        private ToolStripMenuItem HelpOption;
     }
 }

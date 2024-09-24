@@ -20,6 +20,7 @@ namespace BombTimer
                 data.wndSize = new Size(350, 350);
                 string json = JsonConvert.SerializeObject(data, Formatting.Indented);
                 File.WriteAllText("save.json", json);
+                MessageBox.Show("Right click to open the context menu.", "Hi! Need help?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             InitializeComponent();
         }
@@ -37,64 +38,38 @@ namespace BombTimer
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == (Keys.Control | Keys.Q))
+            switch (keyData)
             {
-                QuitAction();
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.R))
-            {
-                DefuseAction();
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.H))
-            {
-                HideAction();
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.Oemplus))
-            {
-                ScaleWindow(50);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.OemMinus))
-            {
-                ScaleWindow(-50);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.D0))
-            {
-                SoundSelectAction(0);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.D1))
-            {
-                SoundSelectAction(1);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.D2))
-            {
-                SoundSelectAction(2);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.D3))
-            {
-                SoundSelectAction(3);
-                return true;
-            }
-
-            if (keyData == (Keys.Control | Keys.D4))
-            {
-                SoundSelectAction(4);
-                return true;
+                case (Keys.Control | Keys.Q):
+                    QuitAction();
+                    return true;
+                case (Keys.Control | Keys.R):
+                    DefuseAction();
+                    return true;
+                case (Keys.Control | Keys.H):
+                    HideAction();
+                    return true;
+                case (Keys.Control | Keys.Oemplus):
+                    ScaleWindow(50);
+                    return true;
+                case (Keys.Control | Keys.OemMinus):
+                    ScaleWindow(-50);
+                    return true;
+                case (Keys.Control | Keys.D0):
+                    SoundSelectAction(0);
+                    return true;
+                case (Keys.Control | Keys.D1):
+                    SoundSelectAction(1);
+                    return true;
+                case (Keys.Control | Keys.D2):
+                    SoundSelectAction(2);
+                    return true;
+                case (Keys.Control | Keys.D3):
+                    SoundSelectAction(3);
+                    return true;
+                case (Keys.Control | Keys.D4):
+                    SoundSelectAction(4);
+                    return true;
             }
 
             return base.ProcessCmdKey(ref msg, keyData);
@@ -145,15 +120,21 @@ namespace BombTimer
         // ****************** //
         private void Wnd_Resize(object sender, EventArgs e)
         {
+            float dpiScale = 96f / DeviceDpi;
             float scaleFactor = (float)Width / 350;
             InputText.Location = new Point((int)(140 * scaleFactor), (int)(96 * scaleFactor));
-            InputText.Font = new Font(InputText.Font.FontFamily, 12f * scaleFactor, FontStyle.Regular, GraphicsUnit.Point, 0);
+            InputText.Font = new Font(fontCollection.Families[0], 18F * dpiScale * scaleFactor, FontStyle.Regular, GraphicsUnit.Point, 0);
         }
 
         #region Context Menu
         private void QuitOption_Click(object sender, EventArgs e)
         {
             QuitAction();
+        }
+
+        private void HelpOption_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void UpOption_Click(object sender, EventArgs e)
@@ -236,12 +217,17 @@ namespace BombTimer
             Hide();
         }
 
-        const int minSize = 250;
-        int maxSize = 540;
+        int RoundTo50(int number)
+        {
+            return (number + 25) / 50 * 50;
+        }
+
+        int minSize, maxSize;
         private void ScaleWindow(int scaleAmount)
         {
             int newSize = Width + scaleAmount;
-            maxSize = Screen.PrimaryScreen.Bounds.Height / 2;
+            minSize = RoundTo50(Screen.PrimaryScreen.Bounds.Height / 4);
+            maxSize = RoundTo50(Screen.PrimaryScreen.Bounds.Height / 2);
             newSize = Math.Max(minSize, Math.Min(maxSize, newSize));
             ClientSize = new Size(newSize, newSize);
         }
