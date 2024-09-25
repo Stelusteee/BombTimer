@@ -204,10 +204,9 @@ namespace BombTimer
             }
         }
 
-        NotifyIcon notifyIcon;
+        NotifyIcon notifyIcon = new NotifyIcon();
         private void HideAction()
         {
-            notifyIcon = new NotifyIcon();
             notifyIcon.Icon = (Icon)rsrc.GetObject("$this.Icon");
             notifyIcon.Visible = true;
             notifyIcon.Click += NotifyIcon_Click;

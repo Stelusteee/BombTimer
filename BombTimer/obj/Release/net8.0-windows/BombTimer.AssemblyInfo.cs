@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BombTimer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da000bbf4de38ef7cbc8f8e9cf51e375c576e2c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47d58e27f4db2da790bfd4d3418501e5d3fe4b67")]
 [assembly: System.Reflection.AssemblyProductAttribute("BombTimer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BombTimer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
