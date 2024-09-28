@@ -19,9 +19,9 @@ namespace BombTimer
             int h = int.Parse(hours);
             int m = int.Parse(minutes);
             int s = int.Parse(seconds);
-            h = h > 59 ? 59 : h;
-            m = m > 59 ? 59 : m;
-            s = s > 59 ? 59 : s;
+            h = h > 60 ? 60 : h;
+            m = m > 60 ? 60 : m;
+            s = s > 60 ? 60 : s;
 
             // Format
             StartCountdown(h * 3600 + m * 60 + s);

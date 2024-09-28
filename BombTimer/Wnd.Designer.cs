@@ -54,7 +54,9 @@ namespace BombTimer
         };
 
         StringBuilder inputStr = new StringBuilder("000000");
+        string inputStrSave;
         string timeStr = "00:00:00";
+        string timeStrSave;
         static bool timerStarted = false;
         private void Wnd_KeyDown(object sender, KeyEventArgs e)
         {
@@ -78,6 +80,9 @@ namespace BombTimer
 
             if (e.KeyCode == Keys.Enter && !timerStarted && !inputStr.Equals("000000"))
             {
+                inputStrSave = inputStr.ToString();
+                timeStrSave = timeStr;
+
                 timerStarted = true;
                 CountdownTimer.Entry(inputStr);
                 CountdownTimer.OutPutEvent += TimerOutput;
@@ -163,6 +168,12 @@ namespace BombTimer
                 ExpWnd = null;
                 Show();
                 notifyIcon.Visible = false;
+
+                timeStr = timeStrSave;
+                InputText.Text = timeStr;
+                inputStr.Clear();
+                inputStr.Append(inputStrSave);
+
                 return;
             }
 
