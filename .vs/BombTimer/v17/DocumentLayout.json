@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "BombTimer\\Wnd.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
               "RelativeToolTip": "BombTimer\\Wnd.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAAMoAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T12:59:25.274Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "BombTimer\\SaveData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:58:08.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T12:58:08.939Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "BombTimer\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:59.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T12:57:59.784Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "BombTimer\\CountdownTimer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:51.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T12:57:51.904Z"
             }
           ]
         }

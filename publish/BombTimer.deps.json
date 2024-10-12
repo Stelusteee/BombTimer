@@ -1,0 +1,140 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BombTimer/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "SFML.Audio": "2.6.0"
+        },
+        "runtime": {
+          "BombTimer.dll": {}
+        }
+      },
+      "CSFML/2.6.1": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/csfml-audio.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/csfml-graphics.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/csfml-system.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/csfml-window.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/openal32.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/csfml-audio.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/csfml-graphics.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/csfml-system.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/csfml-window.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/openal32.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "SFML.Audio/2.6.0": {
+        "dependencies": {
+          "CSFML": "2.6.1",
+          "SFML.System": "2.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SFML.Audio.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        }
+      },
+      "SFML.System/2.6.0": {
+        "dependencies": {
+          "CSFML": "2.6.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SFML.System.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BombTimer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CSFML/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GLSL1ffzsEVunOwCOXeFNsKgx10sLpU8WIuwnzNgD+uSgsodJQ9S4F9g8dOudjj7icjAJjJbOdZ33bv/lWiy4w==",
+      "path": "csfml/2.6.1",
+      "hashPath": "csfml.2.6.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "SFML.Audio/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DvribzbjacRFSFU/A7xLkxlYEwMGKM9bwcpFo3TjStpKTDNSrSDw3EWuE0HwrQpzfiNxCAutnlRFvfwufUHuNw==",
+      "path": "sfml.audio/2.6.0",
+      "hashPath": "sfml.audio.2.6.0.nupkg.sha512"
+    },
+    "SFML.System/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XDNdNah0PKZElyYMAqWd8Kbe/XsJExkTxPY0txIrsTXEFIiRWhlkcYBBZmGkA6wvB5Ib7XH8QqE8s3BY8ZAzaQ==",
+      "path": "sfml.system/2.6.0",
+      "hashPath": "sfml.system.2.6.0.nupkg.sha512"
+    }
+  }
+}
