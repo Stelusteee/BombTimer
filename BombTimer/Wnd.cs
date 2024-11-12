@@ -10,7 +10,7 @@ namespace BombTimer
         string exeDirectory;
         string zipPath = "BombTimerRelease.zip";
 
-        string currentVersion = "v1.1.2";
+        string currentVersion = "v1.2.0";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
@@ -25,7 +25,7 @@ namespace BombTimer
                     if (currentVersion != releases[0].TagName)
                     {
                         MessageBox.Show("New version detected!");
-                        exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                        exeDirectory = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar));
                         await wc.DownloadFileTaskAsync(releases[0].Assets[0].BrowserDownloadUrl, zipPath);
                         UnzipFile();
                     }
