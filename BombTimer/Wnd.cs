@@ -2,15 +2,13 @@ using Newtonsoft.Json;
 using SFML.Audio;
 using Octokit;
 using System.Net;
+using System.Diagnostics;
 
 namespace BombTimer
 {
     public partial class Wnd : Form
     {
-        string exeDirectory;
-        string zipPath = "BombTimerRelease.zip";
-
-        string currentVersion = "v1.2.0";
+        string currentVersion = "v1.1.0";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
@@ -25,9 +23,9 @@ namespace BombTimer
                     if (currentVersion != releases[0].TagName)
                     {
                         MessageBox.Show("New version detected!");
-                        exeDirectory = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar));
-                        await wc.DownloadFileTaskAsync(releases[0].Assets[0].BrowserDownloadUrl, zipPath);
-                        UnzipFile();
+                        if (File.Exists("UpdateDownloader.exe")) File.Move("UpdateDownloader.exe", "UpdateDownloaderUsed.exe");
+                        Process.Start("UpdateDownloaderUsed.exe");
+                        System.Windows.Forms.Application.Exit();
                     }
                 }
                 catch (Exception)
@@ -36,16 +34,15 @@ namespace BombTimer
             }
         }
 
-        public void UnzipFile()
-        {
-            System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, exeDirectory);
-            System.IO.File.Delete(zipPath);
-        }
-
         SaveData data = new SaveData();
         public Wnd()
         {
             CheckForUpdate();
+
+            if (File.Exists("UpdateDownloaderUsed.exe"))
+            {
+                File.Delete("UpdateDownloaderUsed.exe");
+            }
 
             if (File.Exists("save.json"))
             {
@@ -59,7 +56,7 @@ namespace BombTimer
                 data.wndSize = new Size(350, 350);
                 string json = JsonConvert.SerializeObject(data, Formatting.Indented);
                 File.WriteAllText("save.json", json);
-                MessageBox.Show("Right click to open the context menu.", "Hi! Need help?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("Right click to open the context menu.", "Hi! Need help?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             InitializeComponent();
         }
