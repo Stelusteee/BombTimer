@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\wnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,28 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Wnd.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.Designer.cs",
+              "RelativeDocumentMoniker": "BombTimer\\Wnd.Designer.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.Designer.cs",
+              "RelativeToolTip": "BombTimer\\Wnd.Designer.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T11:59:54.617Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,22 +61,23 @@
               "RelativeDocumentMoniker": "BombTimer\\Wnd.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
               "RelativeToolTip": "BombTimer\\Wnd.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMoAAAAjAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T12:59:25.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SaveData.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\SaveData.cs",
               "RelativeDocumentMoniker": "BombTimer\\SaveData.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\SaveData.cs",
               "RelativeToolTip": "BombTimer\\SaveData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:58:08.939Z"
+              "WhenOpened": "2024-10-10T12:58:08.939Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -65,21 +87,23 @@
               "RelativeDocumentMoniker": "BombTimer\\Program.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
               "RelativeToolTip": "BombTimer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:59.784Z"
+              "WhenOpened": "2024-10-10T12:57:59.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CountdownTimer.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\CountdownTimer.cs",
               "RelativeDocumentMoniker": "BombTimer\\CountdownTimer.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\CountdownTimer.cs",
               "RelativeToolTip": "BombTimer\\CountdownTimer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
+              "ViewState": "AgIAABwAAAAAAAAAAABBwAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:51.904Z"
+              "WhenOpened": "2024-10-10T12:57:51.904Z",
+              "EditorCaption": ""
             }
           ]
         }

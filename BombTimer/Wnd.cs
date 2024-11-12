@@ -1,13 +1,52 @@
 using Newtonsoft.Json;
 using SFML.Audio;
+using Octokit;
+using System.Net;
 
 namespace BombTimer
 {
     public partial class Wnd : Form
     {
+        string exeDirectory;
+        string zipPath = "BombTimerRelease.zip";
+
+        string currentVersion = "v1.1.2";
+        string workspaceName = "Stelusteee";
+        string repositoryName = "BombTimer";
+        public async void CheckForUpdate()
+        {
+            var client = new GitHubClient(new ProductHeaderValue("BombTimer"));
+            var releases = await client.Repository.Release.GetAll(workspaceName, repositoryName);
+
+            using (var wc = new WebClient())
+            {
+                try
+                {
+                    if (currentVersion != releases[0].TagName)
+                    {
+                        MessageBox.Show("New version detected!");
+                        exeDirectory = AppDomain.CurrentDomain.BaseDirectory;
+                        await wc.DownloadFileTaskAsync(releases[0].Assets[0].BrowserDownloadUrl, zipPath);
+                        UnzipFile();
+                    }
+                }
+                catch (Exception)
+                {
+                }
+            }
+        }
+
+        public void UnzipFile()
+        {
+            System.IO.Compression.ZipFile.ExtractToDirectory(zipPath, exeDirectory);
+            System.IO.File.Delete(zipPath);
+        }
+
         SaveData data = new SaveData();
         public Wnd()
         {
+            CheckForUpdate();
+
             if (File.Exists("save.json"))
             {
                 string json = File.ReadAllText("save.json");
@@ -188,7 +227,7 @@ namespace BombTimer
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             File.WriteAllText("save.json", json);
 
-            Application.Exit();
+            System.Windows.Forms.Application.Exit();
         }
 
         SoundBuffer defuseBuffer = new SoundBuffer("sounds/bombdef.wav");
