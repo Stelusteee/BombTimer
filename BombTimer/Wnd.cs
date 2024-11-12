@@ -8,7 +8,7 @@ namespace BombTimer
 {
     public partial class Wnd : Form
     {
-        string currentVersion = "v1.1.0";
+        string currentVersion = "v1.2.0";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
