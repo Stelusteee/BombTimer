@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|C:\\Users\\stelu\\source\\repos\\BombTimer\\bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\savedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +42,38 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateNotifier.cs",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs",
+              "RelativeDocumentMoniker": "BombTimer\\UpdateNotifier.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs",
+              "RelativeToolTip": "BombTimer\\UpdateNotifier.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T10:14:44.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateNotifier.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs",
+              "RelativeDocumentMoniker": "BombTimer\\UpdateNotifier.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs [Design]",
+              "RelativeToolTip": "BombTimer\\UpdateNotifier.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T09:01:51.18Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Wnd.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
               "RelativeDocumentMoniker": "BombTimer\\Wnd.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
               "RelativeToolTip": "BombTimer\\Wnd.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T12:59:25.274Z",
               "EditorCaption": ""
@@ -52,18 +81,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SaveData.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\SaveData.cs",
-              "RelativeDocumentMoniker": "BombTimer\\SaveData.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\SaveData.cs",
-              "RelativeToolTip": "BombTimer\\SaveData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:58:08.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
               "RelativeDocumentMoniker": "BombTimer\\Program.cs",
@@ -75,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CountdownTimer.cs",
               "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\CountdownTimer.cs",
               "RelativeDocumentMoniker": "BombTimer\\CountdownTimer.cs",

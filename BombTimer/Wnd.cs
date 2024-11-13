@@ -2,30 +2,28 @@ using Newtonsoft.Json;
 using SFML.Audio;
 using Octokit;
 using System.Net;
-using System.Diagnostics;
 
 namespace BombTimer
 {
     public partial class Wnd : Form
     {
-        string currentVersion = "v1.2.0";
+        UpdateNotifier updateNotifier = new UpdateNotifier();
+
+        string currentVersion = "v1.2.5";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
         {
             var client = new GitHubClient(new ProductHeaderValue("BombTimer"));
             var releases = await client.Repository.Release.GetAll(workspaceName, repositoryName);
-
+            
             using (var wc = new WebClient())
             {
                 try
                 {
                     if (currentVersion != releases[0].TagName)
                     {
-                        MessageBox.Show("New version detected!");
-                        if (File.Exists("UpdateDownloader.exe")) File.Move("UpdateDownloader.exe", "UpdateDownloaderUsed.exe");
-                        Process.Start("UpdateDownloaderUsed.exe");
-                        System.Windows.Forms.Application.Exit();
+                        updateNotifier.ShowDialog();
                     }
                 }
                 catch (Exception)
@@ -167,7 +165,7 @@ namespace BombTimer
 
         private void HelpOption_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
+            MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!" + $"\n{currentVersion}", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void UpOption_Click(object sender, EventArgs e)
