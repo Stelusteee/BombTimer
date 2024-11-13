@@ -9,7 +9,7 @@ namespace BombTimer
     {
         UpdateNotifier updateNotifier = new UpdateNotifier();
 
-        string currentVersion = "v1.2.5";
+        string currentVersion = "v1.2.6";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
