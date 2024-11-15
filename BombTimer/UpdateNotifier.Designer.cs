@@ -96,6 +96,7 @@
             Name = "UpdateNotifier";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "New version available";
+            TopMost = true;
             ResumeLayout(false);
             PerformLayout();
         }

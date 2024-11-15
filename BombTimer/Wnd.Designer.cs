@@ -261,7 +261,8 @@ namespace BombTimer
             // UpOption
             // 
             UpOption.Name = "UpOption";
-            UpOption.ShortcutKeys = Keys.Control | Keys.Oemplus;
+            //UpOption.ShortcutKeys = Keys.Control | Keys.Oemplus;
+            UpOption.ShortcutKeyDisplayString = "Ctrl+Plus";
             UpOption.Size = new Size(299, 34);
             UpOption.Text = "Up";
             UpOption.Click += UpOption_Click;
@@ -269,7 +270,8 @@ namespace BombTimer
             // DownOption
             // 
             DownOption.Name = "DownOption";
-            DownOption.ShortcutKeys = Keys.Control | Keys.OemMinus;
+            //DownOption.ShortcutKeys = Keys.Control | Keys.OemMinus;
+            DownOption.ShortcutKeyDisplayString = "Ctrl+Minus";
             DownOption.Size = new Size(299, 34);
             DownOption.Text = "Down";
             DownOption.Click += DownOption_Click;

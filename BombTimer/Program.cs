@@ -10,6 +10,9 @@ public static class Program
     }
 }
 
-// Valve themed UI
+// Don't worry if it looks stuck: setup and updatedownloader [DONE]
+// Don't override the save file [DONE]
+// Valve themed UI [DONE]
+// Never ask update again [CANCELED]
 // Uninstaller
 // Project timer

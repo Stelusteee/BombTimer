@@ -9,7 +9,7 @@ namespace BombTimer
     {
         UpdateNotifier updateNotifier = new UpdateNotifier();
 
-        string currentVersion = "v1.2.6";
+        string currentVersion = "v1.3.0";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
@@ -56,7 +56,10 @@ namespace BombTimer
                 File.WriteAllText("save.json", json);
                 //MessageBox.Show("Right click to open the context menu.", "Hi! Need help?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             InitializeComponent();
+
+            ctxMenuStrip.Renderer = new CustomContextMenuRenderer();
         }
 
         readonly List<string> soundList = new List<string> { "sounds/moveout.wav", "sounds/bombpl.wav", "sounds/com_go.wav", "sounds/letsgo.wav", "sounds/locknload.wav" };
@@ -165,7 +168,10 @@ namespace BombTimer
 
         private void HelpOption_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!" + $"\n{currentVersion}", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
+            HelpWnd helpWnd = new HelpWnd();
+            helpWnd.label5.Text = currentVersion;
+            helpWnd.ShowDialog();
+            //MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!" + $"\n{currentVersion}", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void UpOption_Click(object sender, EventArgs e)

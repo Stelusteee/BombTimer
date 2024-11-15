@@ -7,20 +7,16 @@
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\wnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\helpwnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\helpwnd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\helpwnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\helpwnd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\updatenotifier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\updatenotifier.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\updatenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|c:\\users\\stelu\\source\\repos\\bombtimer\\bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C394F86-AE6C-4D5B-8875-A51878CC3F7C}|BombTimer\\BombTimer.csproj|solutionrelative:bombtimer\\countdowntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,26 +39,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpdateNotifier.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs",
-              "RelativeDocumentMoniker": "BombTimer\\UpdateNotifier.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.cs",
-              "RelativeToolTip": "BombTimer\\UpdateNotifier.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABzAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
+              "RelativeDocumentMoniker": "BombTimer\\Program.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
+              "RelativeToolTip": "BombTimer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:40:21.011Z"
+              "WhenOpened": "2024-11-15T09:55:17.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateNotifier.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.Designer.cs",
-              "RelativeDocumentMoniker": "BombTimer\\UpdateNotifier.Designer.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\UpdateNotifier.Designer.cs",
-              "RelativeToolTip": "BombTimer\\UpdateNotifier.Designer.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAEkAAAAuAAAAAAAAAA==",
+              "Title": "HelpWnd.cs",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\HelpWnd.cs",
+              "RelativeDocumentMoniker": "BombTimer\\HelpWnd.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\HelpWnd.cs",
+              "RelativeToolTip": "BombTimer\\HelpWnd.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T13:53:19.208Z"
+              "WhenOpened": "2024-11-14T19:21:50.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HelpWnd.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\HelpWnd.Designer.cs",
+              "RelativeDocumentMoniker": "BombTimer\\HelpWnd.Designer.cs",
+              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\HelpWnd.Designer.cs",
+              "RelativeToolTip": "BombTimer\\HelpWnd.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T18:08:31.234Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -72,34 +83,10 @@
               "RelativeDocumentMoniker": "BombTimer\\Wnd.cs",
               "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Wnd.cs",
               "RelativeToolTip": "BombTimer\\Wnd.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAKwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T17:17:34.604Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
-              "RelativeDocumentMoniker": "BombTimer\\Program.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\Program.cs",
-              "RelativeToolTip": "BombTimer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:59.784Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CountdownTimer.cs",
-              "DocumentMoniker": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\CountdownTimer.cs",
-              "RelativeDocumentMoniker": "BombTimer\\CountdownTimer.cs",
-              "ToolTip": "C:\\Users\\stelu\\source\\repos\\BombTimer\\BombTimer\\CountdownTimer.cs",
-              "RelativeToolTip": "BombTimer\\CountdownTimer.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAABBwAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T12:57:51.904Z"
             }
           ]
         }
