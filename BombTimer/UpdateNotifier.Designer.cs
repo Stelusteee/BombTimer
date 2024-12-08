@@ -20,6 +20,34 @@
             base.Dispose(disposing);
         }
 
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            Graphics g = e.Graphics;
+
+            Color lightColor = Color.FromArgb(136, 145, 128);
+            Color darkColor = Color.FromArgb(40, 46, 34);
+            int borderThickness = 2;
+
+            PointF scaleFactor = new PointF((float)Width / 500, (float)Height / 200);
+
+            using (Pen borderPen = new Pen(lightColor, borderThickness))
+            {
+                g.DrawRectangle(borderPen, 0, 0, 500, borderThickness);
+                g.DrawRectangle(borderPen, 0, 0, borderThickness, 200);
+            }
+
+            using (Pen borderPen = new Pen(darkColor, borderThickness))
+            {
+                g.DrawRectangle(borderPen, 0, 197 * scaleFactor.Y, 500, borderThickness);
+                g.DrawRectangle(borderPen, 497 * scaleFactor.X, 0, borderThickness, 200);
+            }
+
+            //var titleClr = new SolidBrush(Color.FromArgb(40, 46, 34));
+            //e.Graphics.FillRectangle(titleClr, 0, 0, 400, 40);
+        }
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -38,7 +66,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Arial", 10F);
             label1.ForeColor = Color.White;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";

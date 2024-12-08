@@ -236,7 +236,7 @@ namespace BombTimer
             c4img.Image = Properties.Resources.c4_render;
             c4img.Location = new Point(0, 0);
             c4img.Name = "c4img";
-            c4img.Size = new Size(350, 350);
+            //c4img.Size = new Size(350, 350);
             c4img.SizeMode = PictureBoxSizeMode.StretchImage;
             c4img.TabIndex = 0;
             c4img.TabStop = false;
@@ -371,8 +371,6 @@ namespace BombTimer
             // 
             BackColor = Color.Gray;
             StartPosition = FormStartPosition.Manual;
-            Location = data.wndLocation;
-            ClientSize = data.wndSize;
             Controls.Add(InputText);
             Controls.Add(c4img);
             FormBorderStyle = FormBorderStyle.None;

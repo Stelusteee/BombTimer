@@ -9,10 +9,10 @@ namespace BombTimer
             InitializeComponent();
 
             float dpiScale = 144f / DeviceDpi;
-            PointF scaleFactor = new PointF((float)Width / 500, (float)Height / 200);
+            PointF scaleFactor = new ((float)Width / 500, (float)Height / 200);
             
             label1.Location = new Point((int)(12 * scaleFactor.X), (int)(9 * scaleFactor.Y));
-            label1.Font = new Font("Arial", 10F * dpiScale * scaleFactor.X, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Arial", 10F * dpiScale * scaleFactor.X, FontStyle.Regular, GraphicsUnit.Point, 0);
             
             label2.Location = new Point((int)(51 * scaleFactor.X), (int)(88 * scaleFactor.Y));
             label2.Font = new Font("Arial", 10F * dpiScale * scaleFactor.X, FontStyle.Regular, GraphicsUnit.Point, 0);

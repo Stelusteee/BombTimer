@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using SFML.Audio;
 using Octokit;
 using System.Net;
+//using System.Diagnostics;
 
 namespace BombTimer
 {
@@ -9,7 +10,7 @@ namespace BombTimer
     {
         UpdateNotifier updateNotifier = new UpdateNotifier();
 
-        string currentVersion = "v1.3.0";
+        string currentVersion = "v1.3.2";
         string workspaceName = "Stelusteee";
         string repositoryName = "BombTimer";
         public async void CheckForUpdate()
@@ -32,10 +33,11 @@ namespace BombTimer
             }
         }
 
+        int WndSclAmount = 50;
         SaveData data = new SaveData();
         public Wnd()
         {
-            CheckForUpdate();
+            try { CheckForUpdate(); } catch (Exception) {}
 
             if (File.Exists("UpdateDownloaderUsed.exe"))
             {
@@ -51,13 +53,23 @@ namespace BombTimer
             {
                 data.soundIndex = 1;
                 data.wndLocation = new Point(0, 0);
-                data.wndSize = new Size(350, 350);
+                data.wndSize = new Size(1, 1) * (minWndSize + maxWndSize) / 2;
                 string json = JsonConvert.SerializeObject(data, Formatting.Indented);
                 File.WriteAllText("save.json", json);
-                //MessageBox.Show("Right click to open the context menu.", "Hi! Need help?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             InitializeComponent();
+
+            WndSclAmount = Screen.PrimaryScreen.Bounds.Height / 30;
+
+            minWndSize = RoundToN(Screen.PrimaryScreen.Bounds.Height / 4, WndSclAmount);
+            maxWndSize = RoundToN(Screen.PrimaryScreen.Bounds.Height / 2, WndSclAmount);
+
+            if (data.wndSize.Width > maxWndSize || data.wndSize.Width < minWndSize)
+                data.wndSize = new Size(1, 1) * (minWndSize + maxWndSize) / 2;
+
+            Location = data.wndLocation;
+            ClientSize = data.wndSize;
 
             ctxMenuStrip.Renderer = new CustomContextMenuRenderer();
         }
@@ -87,10 +99,10 @@ namespace BombTimer
                     HideAction();
                     return true;
                 case (Keys.Control | Keys.Oemplus):
-                    ScaleWindow(50);
+                    ScaleWindow(WndSclAmount);
                     return true;
                 case (Keys.Control | Keys.OemMinus):
-                    ScaleWindow(-50);
+                    ScaleWindow(-WndSclAmount);
                     return true;
                 case (Keys.Control | Keys.D0):
                     SoundSelectAction(0);
@@ -144,7 +156,7 @@ namespace BombTimer
             {
                 curMPos = MousePosition;
 
-                Point mouseDelta = new Point(curMPos.X - preMPos.X, curMPos.Y - preMPos.Y);
+                Point mouseDelta = new(curMPos.X - preMPos.X, curMPos.Y - preMPos.Y);
 
                 preMPos = curMPos;
 
@@ -168,20 +180,20 @@ namespace BombTimer
 
         private void HelpOption_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show((DeviceDpi * ClientSize.Width).ToString());
             HelpWnd helpWnd = new HelpWnd();
             helpWnd.label5.Text = currentVersion;
             helpWnd.ShowDialog();
-            //MessageBox.Show("Insert time and press ENTER to start the timer.\nBackspace to clear time input.\nPress and hold left click to move the window.\nGood luck on your project!" + $"\n{currentVersion}", "Help", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
         private void UpOption_Click(object sender, EventArgs e)
         {
-            ScaleWindow(50);
+            ScaleWindow(WndSclAmount);
         }
 
         private void DownOption_Click(object sender, EventArgs e)
         {
-            ScaleWindow(-50);
+            ScaleWindow(-WndSclAmount);
         }
 
         private void DefuseOption_Click(object sender, EventArgs e)
@@ -253,18 +265,16 @@ namespace BombTimer
             Hide();
         }
 
-        int RoundTo50(int number)
+        int RoundToN(int number, int N)
         {
-            return (number + 25) / 50 * 50;
+            return (number + (N / 2)) / N * N;
         }
 
-        int minSize, maxSize;
+        int minWndSize, maxWndSize;
         private void ScaleWindow(int scaleAmount)
         {
             int newSize = Width + scaleAmount;
-            minSize = RoundTo50(Screen.PrimaryScreen.Bounds.Height / 4);
-            maxSize = RoundTo50(Screen.PrimaryScreen.Bounds.Height / 2);
-            newSize = Math.Max(minSize, Math.Min(maxSize, newSize));
+            newSize = Math.Max(minWndSize, Math.Min(maxWndSize, newSize));
             ClientSize = new Size(newSize, newSize);
         }
 
