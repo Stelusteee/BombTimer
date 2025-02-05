@@ -12,3 +12,6 @@ public static class Program
 
 // Uninstaller
 // Project timer
+// Switch to Google Cloud API
+// Close the issue
+// Add presets like 1 hour or half an hour to f1 f2 or smth

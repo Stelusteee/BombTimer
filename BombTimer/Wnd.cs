@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using SFML.Audio;
 using Octokit;
 using System.Net;
+using System.Diagnostics;
 //using System.Diagnostics;
 
 namespace BombTimer
@@ -72,7 +73,28 @@ namespace BombTimer
             ClientSize = data.wndSize;
 
             ctxMenuStrip.Renderer = new CustomContextMenuRenderer();
+
+            /////////////////////////////////////////////////////////
+
+            fileWatcher = new FileSystemWatcher();
+            fileWatcher.Path = @"C:\Users\stelu\Desktop\ASS";
+            fileWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName | NotifyFilters.DirectoryName;
+            fileWatcher.Filter = "*.*";
+
+            fileWatcher.Changed += OnChanged;
+            fileWatcher.Created += OnChanged;
+            fileWatcher.Deleted += OnChanged;
+
+            fileWatcher.IncludeSubdirectories = true;
+            fileWatcher.EnableRaisingEvents = true;
         }
+
+        private void OnChanged(object sender, FileSystemEventArgs e)
+        {
+            MessageBox.Show($"File: {e.FullPath} {e.ChangeType}", "File System Watcher");
+        }
+
+        private FileSystemWatcher fileWatcher;
 
         readonly List<string> soundList = new List<string> { "sounds/moveout.wav", "sounds/bombpl.wav", "sounds/com_go.wav", "sounds/letsgo.wav", "sounds/locknload.wav" };
         SoundBuffer startBuffer;
@@ -239,6 +261,8 @@ namespace BombTimer
             data.wndSize = ClientSize;
             string json = JsonConvert.SerializeObject(data, Formatting.Indented);
             File.WriteAllText("save.json", json);
+
+            fileWatcher.Dispose();
 
             System.Windows.Forms.Application.Exit();
         }
